@@ -1,0 +1,215 @@
+.links {
+    background-color: var(--waves)
+}
+
+.links > h2 {
+font-size: 30px;
+letter-spacing: 2px;
+font-family: 'Poppins', sans-serif;
+color: var(--link_text);
+}
+
+.links_info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.link {
+    background-color: var(--link);
+    min-width: 200px;
+    min-height: 40px;
+    box-shadow: 10px 10px 28px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.link:hover {
+    background-color: var(--link_hover);
+    transition: 300ms;
+}
+
+.link a {
+    text-decoration: unset;
+    color: var(--link_a);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.projects_title {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    margin-top:70px;
+}
+
+
+.projects {
+width: 90%;
+min-height: 30vh;
+display: flex;
+flex-wrap:wrap;
+justify-content: space-around;
+margin-top: 30px;
+padding: 0px 0px 30px 0px;
+}
+
+.project {
+    margin: 10px 0px;
+    width: 350px;
+    min-height: 500px;
+    box-shadow: 10px 13px 21px 10px rgba(0,0,0,0.52);
+   background-color: var(--project);
+    
+}
+
+.project_photo {
+    width: 100%;
+    min-height: 170px;
+    position: relative;
+    transition: 300ms;
+}
+
+.project_name {
+    width: 100%;
+    min-height: 50px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_description {
+    min-height: 170px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0px 10px;
+    margin-top: 20px;
+}
+
+
+
+.project_photo img {
+    width: 100%;
+    height: 170px;
+    transition: 300ms;
+}
+
+.github {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    fill: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.623);
+    transition: 300ms;
+}
+
+.github svg {
+    width: 100px;
+    height:  100px;
+    transition: 300ms;
+}
+.project_photo:hover .github{
+    transition: 300ms;
+    display: block;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.project_tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid black;
+    min-height: 100px;
+    padding: 0px 15px;
+}
+
+.tool {
+    min-width: 80px;
+    height: 10px !important;
+    box-shadow: 13px 8px 19px -6px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px 5px;
+    
+}
+
+.btn {
+    box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.75) !important;
+    margin: 5px 5px !important;
+    border-radius: 10px !important;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 2px !important;
+    color: black !important;
+    height: 25px !important;
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+@media only screen and (max-width: 627px) {
+    .links_info {
+        flex-wrap: wrap;
+    }
+
+    .links_info .link {
+        margin: 10px 30%;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .project {
+        margin: 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .projects {
+        width: unset;
+    }
+}
