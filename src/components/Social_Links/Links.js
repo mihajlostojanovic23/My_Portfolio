@@ -125,7 +125,7 @@ function Links() {
   Name: 'Portfolio',
   Picture: Portfolio ,
   Description: 'I wanted to showcase some of my projects easier instead of just sending GitHub links , would be bothersome for people viewing them.',
-  Link: '',
+  Link: 'https://github.com/mihajlostojanovic23/My_Portfolio',
   Tools: [
   {tool: 'React' },
   {tool: 'Heroku'}
